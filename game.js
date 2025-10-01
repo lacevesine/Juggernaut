@@ -9,7 +9,6 @@ function preload(){
 function setup() {
   // Create the canvas (adjust width and height as needed)
   let canvas = createCanvas(winWidth, winHeight);
-  fullscreen(true);
 }
 
 function draw(){
@@ -22,7 +21,7 @@ function draw(){
       if(environment.get(x, y)[0] > 0){
         rect(x * cellWidth, y * cellHeight, cellWidth, cellHeight)
       }
-      print()
+      print(environment.get(x, y))
     }
   }
   
