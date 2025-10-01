@@ -21,7 +21,6 @@ function draw(){
       if(environment.get(x, y)[0] > 0){
         rect(x * cellWidth, y * cellHeight, cellWidth, cellHeight)
       }
-      print(environment.get(x, y))
     }
   }
   
