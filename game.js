@@ -24,8 +24,6 @@ function draw(){
       }
     }
   }
-  
-  
 }
 
 class juggernaut{
