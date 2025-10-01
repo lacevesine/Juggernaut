@@ -19,6 +19,7 @@ function draw(){
     for(let y = 0; y < environment.height; y++){
       let cellWidth = winWidth/environment.width
       let cellHeight = winHeight/environment.height
+      fill(255)
       if(environment.get(x, y)[0] > 0){
         rect(x * cellWidth, y * cellHeight, cellWidth, cellHeight)
       }
