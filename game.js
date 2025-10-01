@@ -9,19 +9,30 @@ function preload(){
 function setup() {
   // Create the canvas (adjust width and height as needed)
   let canvas = createCanvas(winWidth, winHeight);
+  fullscreen(true);
 }
 
 function draw(){
-  background(51);
+  background(51, 30, 22);
   // image(environment, 0, 0, 300, 300)
   for(let x = 0; x < environment.width; x++){
     for(let y = 0; y < environment.height; y++){
       let cellWidth = winWidth/environment.width
       let cellHeight = winHeight/environment.height
       if(environment.get(x, y)[0] > 0){
-        rect(x * cellWidth, y * cellHeight, cellWidth, cellHeight)
+        //rect(x * cellWidth, y * cellHeight, cellWidth, cellHeight)
       }
     }
   }
   
+  
+}
+
+class juggernaut{
+  constructor(x, y, width, height){
+    this.x = x; 
+    this.y = y;
+    this.width = width;
+    this.height = height;
+  }
 }
