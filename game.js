@@ -13,7 +13,7 @@ function setup() {
 }
 
 function draw(){
-  background(51, 30, 22);
+  background(300, 80, 22);
   // image(environment, 0, 0, 300, 300)
   for(let x = 0; x < environment.width; x++){
     for(let y = 0; y < environment.height; y++){
